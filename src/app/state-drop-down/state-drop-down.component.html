@@ -1,0 +1,9 @@
+<div>
+  <label>State: </label>
+  <select class="dropdown" (change)="onStateChange($event)">
+    <option value="0">--Select--</option>
+    <option *ngFor="let state of states" value={{state.id}}>
+      {{state.stateName}}
+    </option>
+  </select>
+</div>
